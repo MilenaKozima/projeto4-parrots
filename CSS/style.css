@@ -1,8 +1,48 @@
 body{
-
+background-color: #EEF9BF;
+font-family: 'Roboto', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 * {
     box-sizing: border-box;
   }
 
+.titulo{
+  margin-top: 40px;
+  margin-bottom: 47px;
+  width: 100%;
+  color: #75B79E;
+  font-size: 56px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.jogo{
+  width: 906px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.carta{
+  margin-left: 34px;
+  margin-bottom: 34px;
+  width: 117px;
+  height: 146px;
+  border-radius: 5px;
+  background-color: #A7E9AF;
+  border-color: #99CEA8;
+  display: flex;
+  align-items: center;
+}
+
+img{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
