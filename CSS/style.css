@@ -17,16 +17,14 @@ align-items: center;
   color: #75B79E;
   font-size: 56px;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .jogo{
   width: 906px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .carta{
@@ -45,4 +43,24 @@ img{
   margin: auto;
   width: 100px;
   height: 100px;
+}
+
+
+@media(max-width: 335px){
+.titulo,
+.jogo{
+  width: 100%;
+}
+
+.titulo{
+  font-size: 36px;
+  text-align: center;
+}
+
+.jogo{
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
 }
