@@ -1,0 +1,88 @@
+body{
+background-color: #EEF9BF;
+font-family: 'Roboto', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.titulo{
+  margin-top: 40px;
+  margin-bottom: 47px;
+  width: 100%;
+  color: #75B79E;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.jogo{
+  width: 906px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.cartarot{
+  position: relative;
+}
+
+.carta{
+  margin-left: 34px;
+  margin-bottom: 34px;
+  width: 117px;
+  height: 146px;
+  border-radius: 5px;
+  background-color: #A7E9AF;
+  border-color: #99CEA8;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+}
+
+.carta2 {
+  transform: rotateY(180deg);
+  /* margin-left: 34px; 
+  margin-bottom: 34px;
+  width: 117px;
+  height: 146px;
+  border-radius: 5px;
+  background-color: #A7E9AF;
+  border-color: #99CEA8;
+  display: flex;
+  align-items: center;
+  */
+}
+
+
+img{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+
+@media(max-width: 335px){
+.titulo,
+.jogo{
+  width: 100%;
+}
+
+.titulo{
+  font-size: 36px;
+  text-align: center;
+}
+
+.jogo{
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+}
